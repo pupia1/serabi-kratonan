@@ -8,47 +8,47 @@ import GalleryCard from '@/components/GalleryCard.jsx';
 const GalleryPage = () => {
   const galleryItems = [
     {
-      image: '/assets/original.png',
+      image: '${import.meta.env.BASE_URL}/assets/original.png',
       title: 'Serabi Original',
       category: 'Menu',
     },
     {
-      image: '/assets/bg/proses.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/proses.jpeg',
       title: 'Proses Pembuatan Serabi',
       category: 'Proses',
     },
     {
-      image: '/assets/bg/interior.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/interior.jpeg',
       title: 'Interior Toko',
       category: 'Toko',
     },
     {
-      image: '/assets/pisang coklat.png',
+      image: '${import.meta.env.BASE_URL}/assets/pisang coklat.png',
       title: 'Serabi Pisang Coklat',
       category: 'Menu',
     },
     {
-      image: '/assets/bg/bg-tentang(1).jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/bg-tentang(1).jpeg',
       title: 'Memasak dengan Tungku Tradisional',
       category: 'Proses',
     },
     {
-      image: '/assets/bg/g-coklat.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/g-coklat.jpeg',
       title: 'Varian Serabi Coklat',
       category: 'Menu',
     },
     {
-      image: '/assets/bg/suasana.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/suasana.jpeg',
       title: 'Suasana Toko',
       category: 'Toko',
     },
     {
-      image: '/assets/bg/proses packing.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/proses packing.jpeg',
       title: ' Proses Packaging',
       category: 'Proses',
     },
     {
-      image: '/assets/bg/menus.jpeg',
+      image: '${import.meta.env.BASE_URL}/assets/bg/menus.jpeg',
       title: 'Varian Menu Autentik',
       category: 'Menu',
     },
