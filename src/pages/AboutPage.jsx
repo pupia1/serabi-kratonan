@@ -70,7 +70,7 @@ const AboutPage = () => {
                   transition={{ duration: 0.6 }}
                 >
                   <img
-                    src="/assets/bg/bg-tentang(1).jpeg"
+                    src={`${import.meta.env.BASE_URL}/assets/bg/bg-tentang(1).jpeg`}
                     alt="Traditional serabi preparation process"
                     className="rounded-2xl shadow-lg w-full h-[250px] md:h-[400px] object-cover"
                   />
@@ -127,7 +127,7 @@ const AboutPage = () => {
                   className="order-1 md:order-2"
                 >
                   <img
-                    src="/assets/bg/bg-tentang.jpeg"
+                    src={`${import.meta.env.BASE_URL}/assets/bg/bg-tentang.jpeg`}
                     alt="Serabi Kratonan shop interior"
                     className="rounded-2xl shadow-lg w-full h-[250px] md:h-[400px] object-cover"
                   />

@@ -13,14 +13,14 @@ const HomePage = () => {
   const featuredProducts = [
      {
  
-  image: '${import.meta.env.BASE_URL}/assets/original.png',
+  image: `${import.meta.env.BASE_URL}/assets/original.png`,
   name: 'Serabi Original',
   description: 'Serabi tradisional dengan tekstur lembut, disajikan tanpa topping sehingga cita rasa asli khas Solo tetap terasa.',
   price: 'Rp 4.000',
 },
 {
   
-  image: '${import.meta.env.BASE_URL}/assets/coklat.png',
+  image: `${import.meta.env.BASE_URL}/assets/coklat.png`,
   name: 'Serabi Coklat',
   description: 'Serabi lembut dengan topping cokelat manis yang lumer, memberikan perpaduan rasa klasik dan modern.',
   price: 'Rp 4.500',
