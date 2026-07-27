@@ -30,24 +30,24 @@ const ContactPage = () => {
     },
   ];
 
-   const message = encodeURIComponent(`Halo Serabi Kratonan Khas Solo 👋
+   const message = encodeURIComponent(`Halo Serabi Kratonan Khas Solo
 Saya ingin melakukan pemesanan dengan rincian sebagai berikut.
 
-📝 Data Pemesan
+Data Pemesan
 • Nama:
 • Nomor HP:
 
-🛒 Detail Pesanan
+Detail Pesanan
 • Produk:
 • Varian/Rasa:
 • Jumlah:
 
-🚚 Pengambilan/Pengiriman
+Pengambilan/Pengiriman
 • Metode: Ambil di Tempat / Diantar
 • Alamat (jika diantar):
 • Tanggal & Waktu:
 
-📝 Catatan Tambahan:
+Catatan Tambahan:
 
 Mohon informasi mengenai ketersediaan produk, total harga, dan estimasi waktu penyelesaian.
 
