@@ -21,7 +21,7 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'Phone',
-      content: '+62 812 3456 7890',
+      content: '+62 819 9438 2191',
     },
     {
       icon: Mail,
@@ -114,7 +114,7 @@ const ContactPage = () => {
                       Untuk pemesanan cepat atau pertanyaan mendesak, hubungi kami melalui WhatsApp
                     </p>
                     <a
-                      href="https://wa.me/628123456789"
+                      href="https://wa.me/6281994382191"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:bg-accent/90 transition-all duration-200 active:scale-[0.98]"
