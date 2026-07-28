@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Instagram, Phone } from "lucide-react";
+import { getWhatsAppMessage } from "../utils/whatsappMessage";
 
 const Footer = () => {
   return (
@@ -81,7 +82,7 @@ const Footer = () => {
                   </a>
 
                   <a
-                    href="https://wa.me/6281994382191"
+                    href={`https://wa.me/6281994382191?text=${getWhatsAppMessage()}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

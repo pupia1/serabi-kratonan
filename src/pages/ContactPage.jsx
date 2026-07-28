@@ -5,6 +5,7 @@ import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ContactForm from '@/components/ContactForm.jsx';
+import { getWhatsAppMessage } from "../utils/whatsappMessage";
 
 const ContactPage = () => {
   const contactInfo = [
@@ -30,28 +31,7 @@ const ContactPage = () => {
     },
   ];
 
-   const message = encodeURIComponent(`Halo Serabi Kratonan Khas Solo
-Saya ingin melakukan pemesanan dengan rincian sebagai berikut.
-
-Data Pemesan
-• Nama:
-• Nomor HP:
-
-Detail Pesanan
-• Produk:
-• Varian/Rasa:
-• Jumlah:
-
-Pengambilan/Pengiriman
-• Metode: Ambil di Tempat / Diantar
-• Alamat (jika diantar):
-• Tanggal & Waktu:
-
-Catatan Tambahan:
-
-Mohon informasi mengenai ketersediaan produk, total harga, dan estimasi waktu penyelesaian.
-
-Terima kasih.`);
+   
 
   return (
     <>
@@ -137,7 +117,7 @@ Terima kasih.`);
                       Untuk pemesanan cepat atau pertanyaan mendesak, hubungi kami melalui WhatsApp
                     </p>
                     <a
-                      href={`https://wa.me/6281994382191?text=${message}`}
+                      href={`https://wa.me/6281994382191?text=${getWhatsAppMessage()}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-6 py-3 bg-accent text-accent-foreground rounded-lg font-medium hover:bg-accent/90 transition-all duration-200 active:scale-[0.98]"
