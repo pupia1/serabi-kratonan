@@ -10,17 +10,17 @@ const ContactPage = () => {
   const contactInfo = [
     {
       icon: MapPin,
-      title: 'Location',
+      title: 'Lokasi',
       content: 'Denpasar, Bali, Indonesia',
     },
     {
       icon: Clock,
-      title: 'Operating Hours',
-      content: 'Senin - Minggu\n08:00 - 23:00 WIB',
+      title: 'Jam Operasional',
+      content: 'Senin - Sabtu\n08:00 - 23:00 WIB',
     },
     {
       icon: Phone,
-      title: 'Phone',
+      title: 'Telepon',
       content: '+62 819 9438 2191',
     },
     {
@@ -93,7 +93,7 @@ Terima kasih.`);
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
                   <h2 className="heading-font text-2xl font-bold text-foreground mb-6">
-                    Send us a message
+                    Kirimkan pesan kepada kami
                   </h2>
                   <ContactForm />
                 </motion.div>
@@ -104,7 +104,7 @@ Terima kasih.`);
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
                   <h2 className="heading-font text-2xl font-bold text-foreground mb-6">
-                    Contact information
+                    Informasi Kontak
                   </h2>
                   <div className="space-y-6">
                     {contactInfo.map((info, index) => {

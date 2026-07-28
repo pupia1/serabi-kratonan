@@ -68,7 +68,7 @@ const Footer = () => {
 
               <div className="mt-4 space-y-2 text-sm opacity-90">
                 <p>Denpasar, Bali</p>
-                <p>Senin - Minggu</p>
+                <p>Senin - Sabtu</p>
                 <p>08:00 - 23:00 WIB</p>
 
                 <div className="flex gap-4 mt-4">
