@@ -123,7 +123,7 @@ const ContactForm = () => {
           className="w-full"
           disabled={isSubmitting}
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? 'Sending...' : 'Kirim Pesan'}
         </Button>
       </form>
     </Form>
