@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Logo */}
           <div>
             <span className="heading-font text-2xl font-bold">
-              Serabi Kratonan
+              Srabi Kratonan
             </span>
 
             <p className="mt-2 text-sm opacity-90">
@@ -115,7 +115,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-primary-foreground/20 text-center">
           <p className="text-sm opacity-80">
-            © {new Date().getFullYear()} Serabi Kratonan Khas Solo. All rights
+            © {new Date().getFullYear()} Srabi Kratonan Khas Solo. All rights
             reserved.
           </p>
         </div>

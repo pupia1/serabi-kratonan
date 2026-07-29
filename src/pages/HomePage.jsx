@@ -30,7 +30,7 @@ const HomePage = () => {
   return (
     <>
       <Helmet>
-        <title>Serabi Kratonan Khas Solo - Cita Rasa Tradisional, Kualitas Modern</title>
+        <title>Srabi Kratonan Khas Solo - Cita Rasa Tradisional, Kualitas Modern</title>
         <meta
           name="description"
           content="Nikmati serabi khas Solo dengan resep turun-temurun. Tersedia berbagai varian rasa dengan bahan berkualitas premium."
@@ -61,7 +61,7 @@ const HomePage = () => {
                   className="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 text-balance"
                   style={{ letterSpacing: '-0.02em' }}
                 >
-                  Serabi Kratonan Khas Solo
+                  Srabi Kratonan Khas Solo
                 </h1>
                 <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
                   Cita rasa tradisional, kualitas modern
