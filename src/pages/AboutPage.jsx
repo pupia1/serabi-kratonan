@@ -133,15 +133,15 @@ const komitmen = isiTentang.find(item => item.urutan === 2);
             {sejarah.judul}
           </h2>
 
-          <p className="mb-4 leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {sejarah.deskripsi_1}
           </p>
 
-          <p className="mb-4 leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {sejarah.deskripsi_2}
           </p>
 
-          <p className="leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {sejarah.deskripsi_3}
           </p>
 
@@ -162,15 +162,15 @@ const komitmen = isiTentang.find(item => item.urutan === 2);
             {komitmen.judul}
           </h2>
 
-          <p className="mb-4 leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {komitmen.deskripsi_1}
           </p>
 
-          <p className="mb-4 leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {komitmen.deskripsi_2}
           </p>
 
-          <p className="leading-8">
+          <p className="text-muted-foreground leading-relaxed mb-4">
             {komitmen.deskripsi_3}
           </p>
 
@@ -201,9 +201,14 @@ const komitmen = isiTentang.find(item => item.urutan === 2);
 
               <div className="text-center mb-12">
 
-                <h2 className="text-4xl font-bold">
+                <h2 className="heading-font text-4xl md:text-5xl font-bold text-foreground mb-6 text-balance"
+      style={{ letterSpacing: "-0.02em" }}>
                   Value Kami
                 </h2>
+
+                <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
+            Prinsip-prinsip yang membimbing segala sesuatu yang kami lakukan
+          </p>
 
               </div>
 
@@ -232,7 +237,7 @@ const komitmen = isiTentang.find(item => item.urutan === 2);
 
                       </div>
 
-                      <h3 className="text-2xl font-semibold mb-3">
+                      <h3 className="heading-font text-2xl font-semibold text-card-foreground mb-3">
                         {item.judul}
                       </h3>
 
