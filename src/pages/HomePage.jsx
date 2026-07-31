@@ -7,25 +7,34 @@ import { Button } from '@/components/ui/button';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import ProductCard from '@/components/ProductCard.jsx';
-import serabiImage from '../assets/serabi-kratonan.jpeg';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const HomePage = () => {
-  const featuredProducts = [
-     {
- 
-  image: `${import.meta.env.BASE_URL}/assets/original.png`,
-  name: 'Serabi Original',
-  description: 'Serabi tradisional dengan tekstur lembut, disajikan tanpa topping sehingga cita rasa asli khas Solo tetap terasa.',
-  price: 'Rp 4.000',
-},
-{
-  
-  image: `${import.meta.env.BASE_URL}/assets/coklat.png`,
-  name: 'Serabi Coklat',
-  description: 'Serabi lembut dengan topping cokelat manis yang lumer, memberikan perpaduan rasa klasik dan modern.',
-  price: 'Rp 4.500',
-},
-  ];
+
+  const [home, setHome] = useState({});
+  const [featuredProducts, setFeaturedProducts] = useState([]);
+
+  const API = "http://localhost:5000/api";
+
+  useEffect(() => {
+  getHome();
+}, []);
+
+const getHome = async () => {
+  try {
+
+    const res = await axios.get(`${API}/home`);
+
+    setHome(res.data.data.home);
+    setFeaturedProducts(res.data.data.produkUnggulan);
+
+  } catch (err) {
+
+    console.log(err);
+
+  }
+};
 
   return (
     <>
@@ -44,7 +53,7 @@ const HomePage = () => {
           <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
             <div className="absolute inset-0">
               <img
-                src={serabiImage}
+                src={`http://localhost:5000/uploads/home/${home.gambar_hero}`}
                 alt="Serabi Kratonan Khas Solo"
                 className="w-full h-full object-cover"
               />
@@ -61,10 +70,10 @@ const HomePage = () => {
                   className="heading-font text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 text-balance"
                   style={{ letterSpacing: '-0.02em' }}
                 >
-                  Srabi Kratonan Khas Solo
+                  {home.judul_hero}
                 </h1>
                 <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
-                  Cita rasa tradisional, kualitas modern
+                  {home.subjudul_hero}
                 </p>
                 <Link to="/products">
                   <Button
@@ -89,10 +98,10 @@ const HomePage = () => {
                 className="text-center mb-16"
               >
                 <h2 className="heading-font text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-                  Warisan kuliner Solo yang autentik
+                  {home.tentang_judul}
                 </h2>
                 <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
-                  Serabi Kratonan Khas Solo menghadirkan cita rasa tradisional yang telah diwariskan turun-temurun. Setiap serabi dibuat dengan resep asli dan bahan pilihan berkualitas tinggi untuk memastikan kelezatan yang konsisten.
+                  {home.tentang_deskripsi}
                 </p>
               </motion.div>
 
@@ -173,7 +182,11 @@ const HomePage = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {featuredProducts.map((product, index) => (
-                  <ProductCard key={index} {...product} />
+                  <ProductCard key={product.id}
+    image={`http://localhost:5000/uploads/product/${product.gambar}`}
+    name={product.nama_produk}
+    description={product.deskripsi}
+    price={`Rp ${Number(product.harga).toLocaleString("id-ID")}`} />
                 ))}
               </div>
 
